@@ -6,7 +6,7 @@ status: "In Progress"
 # progress: ""
 type: "book"
 icon: "fas fa-book-open"
-cover_image: "./assets/static/book-cover.png"
+cover_image: "/assets/static/book-cover.jpg"
 featured: true
 tags:
   - Mathematics
@@ -15,8 +15,8 @@ tags:
   - Book
 ---
 
-Je travaille sur un petit projet de redaction d'un petit ouvrage  pour initier les débutants à l'algèbre linéaire avec Python — espaces vectoriels, valeurs propres, SVD — avec des implémentations en parallèle de la théorie. Toujours en cours.
+<!-- Je travaille sur un petit projet de redaction d'un petit ouvrage  pour initier les débutants à l'algèbre linéaire avec Python — espaces vectoriels, valeurs propres, SVD — avec des implémentations en parallèle de la théorie. Toujours en cours.
 
-*A small project, a booklet to introduce beginners to linear algebra with Python : vector spaces, eigenvalues, SVD, with implementations alongside the theory. Still in progress.*
+*A small project, a booklet to introduce beginners to linear algebra with Python : vector spaces, eigenvalues, SVD, with implementations alongside the theory. Still in progress.* -->
 
 

@@ -27,7 +27,7 @@ email:
   - jnlandu00@gmail.com
 
 profile_alt: Jérémie Mabiala
-profile_image: ./profile.png
+profile_image: /assets/profiles/img-hero.jpeg
 
 
 # Location & Institution
@@ -45,7 +45,7 @@ header_pages:
 
 # Site Description
 description: >- 
-      I'm a master's student in Machine Intelligence at the African Institute of Mathematical Sciences, Senegal.
+      Jeremie Mabiala
 
 # Site Configuration
 baseurl: "" 
