@@ -66,12 +66,13 @@ layout: default
   <div class="about-content">
     <div class="about-split">
       <div class="about-left">
-        <img 
+        <img
           src="{{ '/assets/profiles/img.jpeg' | relative_url }}"
           alt="{{ site.profile_alt | default: site.title }}"
           class="about-portrait"
           loading="lazy"
         >
+        <p class="about-portrait-caption">Photo taken in Serena Hotel, Lake Kivu, Rwanda</p>
       </div>
       <div class="about-right">
         <h2>About Me</h2>
@@ -83,7 +84,7 @@ layout: default
             <span class="lang-label"><i class="fas fa-language"></i> Language:</span>
             <button class="lang-btn lang-btn-active" id="lang-en" onclick="setBioLang('en')">En</button>
             <span class="lang-sep">|</span>
-            <button class="lang-btn" id="lang-fr" disabled style="opacity:0.35;cursor:not-allowed;">Fr</button>
+            <button class="lang-btn" id="lang-fr" onclick="setBioLang('fr')">Fr</button>
           </div>
           <a href="{{ '/posts/' | relative_url }}" class="btn btn-secondary btn-small">
             <i class="fas fa-pen-nib"></i> Visit my posts

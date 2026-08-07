@@ -8,26 +8,9 @@
     {% endif %}
   <p class="text-center">
     {% if site.firstName and site.lastName  %}
-    MIT License &mdash; <span class="text-brand">{{ site.firstName }} {{ site.lastName }}</span> ©{{ year_string }}.
+   <span class="text-brand">{{ site.firstName }} {{ site.lastName }}</span> ©{{ year_string }}.
     {% endif %}
     <br>
-    {% comment %}
     Powered by <a class="yellow" href="https://jekyllrb.com/">Jekyll</a> and hosted by <a class="yellow" href="hhttps://pages.github.com/">github pages</a>.
-    {% endcomment %}
-     {{ site.description | escape }} 
-     {% if site.github_repo %}
-     Feel free to 
-     <a class="text-brand" href="{{ site.github_repo }}"> 
-      steal it 
-    </a> 
-    and make it yours. Please,  don't forget to star the 
-    <a href="{{ site.github_repo }}">
-      repo 
-    </a> 
-    if you like it.
-    {% endif %}
   </p>
-  <div class="footer-meta" style="text-align:center;margin-top:.5rem;">
-    {% include visitor-counter.html %}
-  </div>
 </div>

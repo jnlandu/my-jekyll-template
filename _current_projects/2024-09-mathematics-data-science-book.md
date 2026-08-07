@@ -6,7 +6,7 @@ status: "In Progress"
 # progress: ""
 type: "book"
 icon: "fas fa-book-open"
-cover_image: "./assets/static/book-cover.png"
+cover_image: "/assets/static/book-cover.jpg"
 featured: true
 tags:
   - Mathematics
