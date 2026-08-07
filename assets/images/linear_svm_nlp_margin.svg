@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">Linear SVM margin for NLP vectors</title>
+  <desc id="desc">Texts are transformed into TF-IDF vectors and separated by a linear SVM hyperplane with a margin.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3d4b5f"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b1f33" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="520" fill="#ffffff"/>
+
+  <g font-family="Inter, system-ui, -apple-system, sans-serif">
+    <g filter="url(#shadow)">
+      <rect x="42" y="86" width="230" height="122" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+      <rect x="42" y="268" width="230" height="122" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+    </g>
+    <text x="72" y="128" fill="#0f172a" font-size="23" font-weight="700">Document A</text>
+    <text x="72" y="164" fill="#475569" font-size="18">"great movie,</text>
+    <text x="72" y="188" fill="#475569" font-size="18">excellent acting"</text>
+    <text x="72" y="310" fill="#0f172a" font-size="23" font-weight="700">Document B</text>
+    <text x="72" y="346" fill="#475569" font-size="18">"bad plot,</text>
+    <text x="72" y="370" fill="#475569" font-size="18">boring movie"</text>
+
+    <path d="M294 148 L402 148" stroke="#3d4b5f" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M294 330 L402 330" stroke="#3d4b5f" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="317" y="126" fill="#334155" font-size="18" font-weight="700">TF-IDF</text>
+    <text x="317" y="308" fill="#334155" font-size="18" font-weight="700">TF-IDF</text>
+
+    <g filter="url(#shadow)">
+      <rect x="420" y="86" width="170" height="122" rx="8" fill="#eef6ff" stroke="#7aa7d9" stroke-width="2"/>
+      <rect x="420" y="268" width="170" height="122" rx="8" fill="#eef6ff" stroke="#7aa7d9" stroke-width="2"/>
+    </g>
+    <text x="446" y="134" fill="#0b3954" font-size="22" font-weight="700">xA</text>
+    <text x="480" y="134" fill="#475569" font-size="19">in R<tspan baseline-shift="super" font-size="12">d</tspan></text>
+    <text x="444" y="168" fill="#475569" font-size="17">sparse vector</text>
+    <text x="446" y="316" fill="#0b3954" font-size="22" font-weight="700">xB</text>
+    <text x="480" y="316" fill="#475569" font-size="19">in R<tspan baseline-shift="super" font-size="12">d</tspan></text>
+    <text x="444" y="350" fill="#475569" font-size="17">sparse vector</text>
+
+    <path d="M612 238 L700 238" stroke="#3d4b5f" stroke-width="3" marker-end="url(#arrow)"/>
+  </g>
+
+  <g transform="translate(682 42)">
+    <rect x="0" y="0" width="212" height="430" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+    <g stroke="#e5e7eb" stroke-width="1">
+      <path d="M28 360 L186 360"/>
+      <path d="M28 300 L186 300"/>
+      <path d="M28 240 L186 240"/>
+      <path d="M28 180 L186 180"/>
+      <path d="M28 120 L186 120"/>
+      <path d="M60 72 L60 386"/>
+      <path d="M112 72 L112 386"/>
+      <path d="M164 72 L164 386"/>
+    </g>
+    <path d="M44 372 L178 78" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+    <path d="M30 345 L164 51" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8 8"/>
+    <path d="M58 399 L192 105" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8 8"/>
+
+    <circle cx="126" cy="128" r="8" fill="#2a9d8f"/>
+    <circle cx="144" cy="162" r="8" fill="#2a9d8f"/>
+    <circle cx="112" cy="190" r="8" fill="#2a9d8f"/>
+    <circle cx="72" cy="294" r="8" fill="#e76f51"/>
+    <circle cx="92" cy="330" r="8" fill="#e76f51"/>
+    <circle cx="58" cy="350" r="8" fill="#e76f51"/>
+
+    <path d="M106 230 L142 246" stroke="#d62828" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="150" y="254" fill="#d62828" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="19" font-weight="700">w</text>
+    <text x="44" y="44" fill="#0f172a" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">w<tspan baseline-shift="super" font-size="12">T</tspan>x + b = 0</text>
+    <text x="76" y="420" fill="#64748b" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="16">margin</text>
+  </g>
+</svg>

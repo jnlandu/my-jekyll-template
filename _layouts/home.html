@@ -693,7 +693,7 @@ layout: default
 
       <div class="contact-map">
         <div class="map-container">
-          <iframe 
+          <iframe
             src="https://maps.google.com/maps?q=PG2J%2BX2M+Dakar&output=embed&z=16"
             width="100%"
             height="100%"
@@ -708,4 +708,81 @@ layout: default
     </div>
   </div>
 </section>
+
+<!-- Trending Post Toast -->
+<div id="trending-toast" class="trending-toast" role="status" aria-live="polite">
+  <button id="trending-toast-close" class="trending-toast-close" aria-label="Dismiss">&times;</button>
+  <div class="trending-toast-icon"><i class="fas fa-lightbulb"></i></div>
+  <div class="trending-toast-body">
+    <p class="trending-toast-text">
+      Did you know? A linear SVM classifier is really just a hyperplane splitting your text
+      vectors — and the margin is exactly a distance formula in disguise.
+    </p>
+    <a href="{{ '/posts/linear-svm-nlp-margin/' | relative_url }}" class="trending-toast-link">
+      Read the post <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
+<style>
+  .trending-toast {
+    position: fixed;
+    right: 16px;
+    bottom: 32px;
+    z-index: 998;
+    display: flex;
+    align-items: flex-start;
+    gap: .75rem;
+    max-width: 340px;
+    background: #0b1220;
+    color: #e6eefc;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 12px;
+    padding: .9rem 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    transform: translateY(16px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease;
+  }
+  .trending-toast.show { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  .trending-toast-icon { color: #f5c451; font-size: 1.2rem; margin-top: .1rem; }
+  .trending-toast-body { flex: 1; }
+  .trending-toast-text { margin: 0 0 .5rem; font-size: .9rem; line-height: 1.4; }
+  .trending-toast-link { color: #7aa2ff; text-decoration: none; font-weight: 600; font-size: .9rem; white-space: nowrap; }
+  .trending-toast-link:hover { text-decoration: underline; }
+  .trending-toast-close {
+    position: absolute; top: 6px; right: 8px;
+    background: transparent; border: 0; color: #9fb0ca;
+    font-size: 1.1rem; line-height: 1; cursor: pointer;
+  }
+  .trending-toast-close:hover { color: #fff; }
+  @media (max-width: 480px) {
+    .trending-toast { left: 12px; right: 12px; max-width: none; bottom: 88px; }
+  }
+</style>
+
+<script>
+  (function() {
+    const toast = document.getElementById('trending-toast');
+    const closeBtn = document.getElementById('trending-toast-close');
+    if (!toast || !closeBtn) return;
+
+    const SEEN_KEY = 'trendingToastSeen';
+
+    function showToast() {
+      toast.classList.add('show');
+      sessionStorage.setItem(SEEN_KEY, '1');
+    }
+    function hideToast() {
+      toast.classList.remove('show');
+    }
+
+    if (!sessionStorage.getItem(SEEN_KEY)) {
+      setTimeout(showToast, 2500);
+    }
+
+    closeBtn.addEventListener('click', hideToast);
+  })();
+</script>
 
