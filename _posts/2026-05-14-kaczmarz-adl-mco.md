@@ -858,7 +858,6 @@ une classe, en bleu ceux qui poussent vers les autres.
 
 
 
-## Conclusion
 
 Nous avons dérivé deux algorithmes Kaczmarz et les avons appliqués au problème
 ADL-MCO :

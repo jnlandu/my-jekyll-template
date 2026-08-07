@@ -316,6 +316,21 @@
 
         targets.forEach(t => { if (t) activeObs.observe(t); });
 
+        // Resync currentSectionIndex from actual scroll position (the IntersectionObserver
+        // above can go stale on sections taller than the viewport, since it only fires past
+        // 50% visibility — using it alone as the sole source of truth caused jumps to skip
+        // a section). Call this right before deciding where a gesture should jump next.
+        function getCurrentIndexByScroll() {
+          let closest = 0;
+          let closestDist = Infinity;
+          targets.forEach((t, i) => {
+            if (!t) return;
+            const dist = Math.abs(t.getBoundingClientRect().top);
+            if (dist < closestDist) { closestDist = dist; closest = i; }
+          });
+          return closest;
+        }
+
         // Smooth scroll with directional slide effects
         function scrollToSection(index, direction = 'down') {
           if (index < 0 || index >= targets.length || !targets[index] || isScrolling) return;
@@ -373,10 +388,12 @@
             case 'ArrowDown':
             case 'Space':
               e.preventDefault();
+              currentSectionIndex = getCurrentIndexByScroll();
               scrollToSection(currentSectionIndex + 1, 'down');
               break;
             case 'ArrowUp':
               e.preventDefault();
+              currentSectionIndex = getCurrentIndexByScroll();
               scrollToSection(currentSectionIndex - 1, 'up');
               break;
             case 'Home':
@@ -404,10 +421,11 @@
           clearTimeout(wheelTimeout);
           wheelTimeout = setTimeout(() => {
             if (Math.abs(wheelAccumulator) > 50) { // higher threshold for more deliberate scrolling
+              currentSectionIndex = getCurrentIndexByScroll();
               const direction = wheelAccumulator > 0 ? 'down' : 'up';
-              const nextIndex = wheelAccumulator > 0 ? 
+              const nextIndex = wheelAccumulator > 0 ?
                 currentSectionIndex + 1 : currentSectionIndex - 1;
-              
+
               scrollToSection(nextIndex, direction);
             }
             wheelAccumulator = 0; // reset
