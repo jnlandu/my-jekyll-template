@@ -171,9 +171,7 @@ $\mathbf{X}_c^\top \mathbf{X}_c \in \mathbb{R}^{4096 \times 4096}$.
 
 
 
-## Conclusion
-
-L'équation normale $\mathbf{X}^\top \mathbf{X}\,\mathbf{w} = \mathbf{X}^\top \mathbf{b}$
+En somme, l'équation normale $\mathbf{X}^\top \mathbf{X}\,\mathbf{w} = \mathbf{X}^\top \mathbf{b}$
 est le cœur du problème MCO. Elle admet deux lectures complémentaires :
 
 - **Algébrique** : annulation du gradient de la fonction coût quadratique.

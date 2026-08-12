@@ -169,13 +169,13 @@ d'entraînement.
 
 Les SVM linéaires sont particulièrement adaptés aux représentations TF-IDF.
 La raison est simple : les vecteurs NLP classiques sont de très grande
-dimension, mais ils sont creux.
+dimension, mais ils sont creux (sparse en anglais).
 
 Dans cet espace, certains mots ou n-grammes deviennent très discriminants :
 
-- `excellent`, `amazing`, `recommend` peuvent pousser vers une classe positive,
-- `boring`, `terrible`, `refund` peuvent pousser vers une classe négative,
-- `free`, `winner`, `click` peuvent pousser vers une classe spam.
+- `excellent`, `incroyable`, `recommande` peuvent pousser vers une classe positive,
+- `ennuyeux`, `terrible`, `remboursement` peuvent pousser vers une classe négative,
+- `gratuit`, `gagnant`, `cliquez` peuvent pousser vers une classe spam.
 
 Le vecteur $\mathbf{w}$ appris par le SVM donne un poids à chaque terme. Si
 $w_j$ est positif, le terme $t_j$ pousse vers la classe $+1$. Si $w_j$ est
@@ -199,10 +199,10 @@ from sklearn.pipeline import make_pipeline
 from sklearn.svm import LinearSVC
 
 texts = [
-    "excellent movie with great acting",
-    "beautiful story and wonderful actors",
-    "bad movie with boring scenes",
-    "terrible plot and poor acting",
+    "film excellent avec un jeu d'acteurs formidable",
+    "belle histoire et acteurs merveilleux",
+    "mauvais film avec des scènes ennuyeuses",
+    "scénario terrible et jeu d'acteurs médiocre",
 ]
 
 labels = [1, 1, -1, -1]
@@ -215,8 +215,8 @@ model = make_pipeline(
 model.fit(texts, labels)
 
 new_texts = [
-    "great and beautiful movie",
-    "boring plot with poor acting",
+    "film formidable et magnifique",
+    "scénario ennuyeux avec un jeu d'acteurs médiocre",
 ]
 
 predictions = model.predict(new_texts)
@@ -304,10 +304,7 @@ Cette règle est simple, mais très naturelle : on annote en priorité les texte
 qui peuvent le plus déplacer la frontière de décision.
 
 
-
-## Récapitulatif
-
-Dans un pipeline NLP classique :
+En somme, dans un pipeline NLP classique, on a :
 
 - un texte devient un vecteur $\mathbf{x}$ avec TF-IDF ou bag-of-words,
 - un SVM linéaire apprend un hyperplan $\mathbf{w}^\top\mathbf{x} + b = 0$,
