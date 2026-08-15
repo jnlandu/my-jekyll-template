@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "L'Équation Normale des Moindres Carrés"
 toc: true
@@ -190,4 +190,4 @@ Kaczmarz.
 
 1. Strang, G. (2016). *Introduction to Linear Algebra* (5th ed.). Wellesley-Cambridge Press.
 2. Trefethen, L. N. & Bau, D. (1997). *Numerical Linear Algebra*. SIAM.
-3. Björck, Å. (1996). *Numerical Methods for Least Squares Problems*. SIAM.
+3. Björck, Å. (1996). *Numerical Methods for Least Squares Problems*. SIAM. -->

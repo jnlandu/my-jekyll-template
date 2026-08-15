@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "Distance d'un Point à un Hyperplan : Géométrie, Dérivation et Applications"
 toc: true
@@ -475,4 +475,4 @@ quantité proportionnelle à cette distance.
 2. Boyd, S. & Vandenberghe, L. (2004). *Convex Optimization*, Section 2.2. Cambridge University Press.
 3. Strohmer, T. & Vershynin, R. (2009). A randomized Kaczmarz algorithm with exponential convergence. *Journal of Fourier Analysis and Applications*, 15(2), 262–278.
 4. Vapnik, V. (1995). *The Nature of Statistical Learning Theory*. Springer.
-5. Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*, Section 4.1. Springer.
+5. Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*, Section 4.1. Springer. -->

@@ -22,7 +22,7 @@ body {
 <section class="news-header-section" id="news-top">
   <div class="container">
     <header class="page-header">
-      <div class="page-eyebrow">All Updates</div>
+      <!-- <div class="page-eyebrow">All Updates</div> -->
       <h1 class="page-title">News & Updates</h1>
       <p class="page-subtitle">
        Latest updates about me, my achievements, fellowships, conferences, and exciting events that I attended in chronological order.
