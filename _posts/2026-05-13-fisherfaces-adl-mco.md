@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "Fisherfaces : Implémenter l'ADL comme un Problème de Moindres Carrés"
 toc: true
@@ -434,4 +434,4 @@ l'approche classique.
 1. Belhumeur, P. N., Hespanha, J. P., & Kriegman, D. J. (1997). Eigenfaces vs. Fisherfaces: Recognition using class specific linear projection. *IEEE TPAMI*, 19(7), 711–720.
 2. Turk, M. & Pentland, A. (1991). Eigenfaces for recognition. *Journal of Cognitive Neuroscience*, 3(1), 71–86.
 3. Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*, Section 4.1.5. Springer.
-4. Paige, C. C. & Saunders, M. A. (1982). LSQR: An algorithm for sparse linear equations and sparse least squares. *ACM TOMS*, 8(1), 43–71.
+4. Paige, C. C. & Saunders, M. A. (1982). LSQR: An algorithm for sparse linear equations and sparse least squares. *ACM TOMS*, 8(1), 43–71. -->

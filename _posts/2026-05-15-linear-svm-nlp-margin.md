@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "Linear SVMs for NLP : TF-IDF, Hyperplans et Marges"
 toc: true
@@ -317,4 +317,4 @@ mesure à quel point le document est éloigné de la frontière de décision.
 
 C'est cette géométrie très simple qui rend les SVM linéaires si utiles en NLP :
 ils transforment un problème linguistique en problème de séparation dans un
-espace vectoriel de grande dimension.
+espace vectoriel de grande dimension. -->

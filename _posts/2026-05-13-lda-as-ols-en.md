@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "Deriving Linear Discriminant Analysis as a Least Squares Problem"
 toc: true
@@ -320,4 +320,4 @@ This is more than a mathematical curiosity:
 1. Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*, Section 4.1.5. Springer.
 2. Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning*, Section 4.3. Springer.
 3. Duda, R. O., Hart, P. E., & Stork, D. G. (2001). *Pattern Classification*, Chapter 3. Wiley.
-4. Paige, C. C. & Saunders, M. A. (1982). LSQR: An algorithm for sparse linear equations and sparse least squares. *ACM Transactions on Mathematical Software*, 8(1), 43–71.
+4. Paige, C. C. & Saunders, M. A. (1982). LSQR: An algorithm for sparse linear equations and sparse least squares. *ACM Transactions on Mathematical Software*, 8(1), 43–71. -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "ADL comme MCO : Résolution par la Méthode de Kaczmarz Aléatoire"
 toc: true
@@ -885,4 +885,4 @@ ADL-MCO au niveau algorithmique.
 3. Kaczmarz, S. (1937). Angenäherte Auflösung von Systemen linearer Gleichungen. *Bulletin International de l'Académie Polonaise des Sciences et des Lettres*, 35, 355–357.
 4. Needell, D. & Tropp, J. A. (2014). Paved with good intentions: Analysis of a randomized block Kaczmarz method. *Linear Algebra and its Applications*, 441, 199–221.
 5. Belhumeur, P. N., Hespanha, J. P., & Kriegman, D. J. (1997). Eigenfaces vs. Fisherfaces: Recognition using class specific linear projection. *IEEE TPAMI*, 19(7), 711–720.
-6. Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*, Section 4.1.5. Springer.
+6. Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*, Section 4.1.5. Springer. -->
